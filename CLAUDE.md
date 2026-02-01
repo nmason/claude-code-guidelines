@@ -9,12 +9,13 @@
 3. **Update the specification** when adding new features or making architectural changes
 
 ## Specification Documents
+
+### Quick Overview
 **Current Phase:** Specification Complete (v1.2)
-
 **Codename:** Planner
-
 **What it is:** A rostering tool for retail, hospitality, churches, and clubs to create staff/volunteer rosters. Solves the problem of time-consuming availability collection and roster juggling.
 
+### Key Documents
 - **`docs/specification.md`** - The complete project specification. This is the source of truth for what the project is and how it should work.
 - **`docs/specification-changelog.md`** - Tracks all changes to the specification. Every modification to the specification must be logged here with:
   - Date of change
@@ -22,7 +23,7 @@
   - Details of what was added, removed, or modified
 - **`docs/technology.md`** - Technology stack documentation including syntax examples, package usage, and configuration notes. Reference this for implementation details.
 - **`docs/brainstorm.md`** - Working document for capturing ideas during planning. Uses a temperature rating system (1-5) to track likelihood of inclusion. Temperature 5 ideas get promoted to the specification.
-- ** docs/linear-issues.md ** - A reference to all linear tasks for this project.  Keep this document up to date, when you complete a task, ensure it's checked off.  If you create/modify/delete a issue, ensure document is updated.  When viewing milestones or phases, this is your reference sheet to easily find the issue rather than relying on the Linear MCP, which is an alternative but slower method.
+- **`docs/linear-issues.md`** - A reference to all linear tasks for this project.  Keep this document up to date, when you complete a task, ensure it's checked off.  If you create/modify/delete a issue, ensure document is updated.  When viewing milestones or phases, this is your reference sheet to easily find the issue rather than relying on the Linear MCP, which is an alternative but slower method.
 
 
 ## Workflow
@@ -36,6 +37,8 @@
 7. Ensure Acceptance Criteria is meet
 8. Follow Git Workflow and Git Acceptance Criteria
 
+** CRITICAL ** EVERY ISSUE MUST BE ON ITS OWN BRANCH, NO EXCEPTIONS
+
 ## Git Workflow and Git Acceptance Criteria
 **Important:** All work should be done on feature branches and submitted via Pull Requests. Do not push directly to the production branch.
 1. Commit often, each mini task within issue should be committed to create branch snapshots.
@@ -45,7 +48,8 @@
 5. Perform a code review using `review` skill.  Post full review as a PR Comment.
 6. Review review points.  For any review points where can justify for not doing, create a PR comment with justification.  Fix any unjustified points from the review.  Re-review including your justifications until the review is satisfied.
 7. When all Actions pass, review is satisfied you can merge branch into `development`.
-8. Checkout and pull development ready for the next issue.
+8. Mark linear issue as completed using linear mcp.  Mark the linear issue as completed on `docs/linear-issues.md`
+9. Checkout and pull development ready for the next issue.
 
 
 ## Technology Notes
@@ -70,6 +74,3 @@ we use phpstan on level 10, any changes will need to be compliant with any work 
 ## Pest Testing
 We utilise Pest for our testing framework. We should test not just unit / features tests but also browser tests utilizing Pest.  We should run pest in parallel.  Testing coverage is important, and we should maintain a high level of test coverage.
 
-
-
-===
