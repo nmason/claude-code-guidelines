@@ -10,7 +10,9 @@
 
 ## Specification Documents
 **Current Phase:** Specification Complete (v1.2)
+
 **Codename:** Planner
+
 **What it is:** A rostering tool for retail, hospitality, churches, and clubs to create staff/volunteer rosters. Solves the problem of time-consuming availability collection and roster juggling.
 
 - **`docs/specification.md`** - The complete project specification. This is the source of truth for what the project is and how it should work.
